@@ -1,7 +1,7 @@
 /* index.js */
 const express = require('express');
-let pokemons = require('./db-pokemons');
-let helper = require('./helper');
+let pokemons = require('../db-pokemons');
+let helper = require('../helper');
 
 
 // Les variables utilisees dans le programme
@@ -52,15 +52,5 @@ app.get('/api/pokemons/:id', (req, res) => {
     //res.json(pokemon);
     const message = "One pokemon is founded !";
     res.json( helper.success(message, pokemon) );
-});
-
-
-/*
-*-----------------------------------------------
-* L O G  O N  A D M I N  S C R E E N
-*-----------------------------------------------
-*/
-app.listen(PORT, () => {
-console.log(`Server listening on http://localhost:${PORT}`);
 });
 

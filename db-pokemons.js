@@ -110,4 +110,3 @@ const pokemons = [
 ]
 
 module.exports = pokemons;	
-
