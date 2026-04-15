@@ -1,7 +1,7 @@
 /* index.js */
 const express = require('express');
-let pokemons = require('../db-pokemons');
-let helper = require('../helper');
+let pokemons = require('/db-pokemons');
+let helper = require('/helper');
 
 
 // Les variables utilisees dans le programme
